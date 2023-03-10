@@ -3,35 +3,42 @@ export default class Testimonials extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
-      <section id="testimonials">
-        <div className="text-container">
-          <div className="row">
-            <div className="two columns header-col">
-              <h1><span>Client Testimonials</span></h1>
+      <section id="testimonials" className="s-testimonials target-section">
+        <div className="s-testimonials__bg"></div>
+        <div className="row s-testimonials__header">
+            <div className="column large-12">
+                <h3>Hear What My Clients Says</h3>
             </div>
-            <div className="ten columns flex-container">
-              <div className="flexslider">
-                <ul className="slides">
-                  {
-                    resumeData.testimonials && resumeData.testimonials.map((item)=>{
-                      return(
-                        <li>
-                          <blockquote>
-                            <p>
-                            {item.description}
-                            </p>
-                            <cite>{item.name}</cite>
-                          </blockquote>
-                        </li>
-                      )
-                    })
-                  }
-                </ul>
-              </div> {/* div.flexslider ends */}
-            </div> {/* div.flex-container ends */}
-          </div> {/* row ends */}
-        </div>  {/* text-container ends */}
-      </section>
-        );
+        </div>
+        <div className="row s-testimonials__content">
+            <div className="column">
+                <div className="swiper-container testimonial-slider">
+                    <div className="swiper-wrapper">
+                        {
+                          resumeData.testimonials && resumeData.testimonials.map((item)=>{
+                            return(
+                              <div className="testimonial-slider__slide swiper-slide">
+                                <div className="testimonial-slider__author">
+                                    <img src="images/avatars/user-02.jpg" alt="" className="testimonial-slider__avatar"></img>
+                                    <cite className="testimonial-slider__cite">
+                                        <strong>{item.name}</strong>
+                                        <span>{item.title}</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                  {item.description}
+                                </p>
+                            </div>
+                            )
+                          })
+                        }
+
+                    </div>
+                    <div className="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    );
   }
 }

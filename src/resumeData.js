@@ -1,32 +1,20 @@
 let resumeData = {
-    "imagebaseurl":"https://krazychase.github.io",
     "name": "Chase Brown",
     "role": "Computer Scientist / Software Engineer / Cybersecurity Enthusiast",
-    "roleDescription": "",
+    "address":"Grand Junction Colorado, United States",
+    "website":"https://krazychase.github.io",
+    "email":"cabrown.business@gmail.com",
     "socialLinks":[
         {
           "name":"linkedin",
           "url":"https://www.linkedin.com/in/chase-brown-1b1b0a245/",
-          "className":"fa fa-linkedin"
         },
         {
           "name":"github",
           "url":"http://github.com/krazychase",
-          "className":"fa fa-github"
         }
       ],
     "aboutme":"I am an innovative Computer Scientist who learns quickly and embraces challenges. I seek to obtain a full-time opportunity that will allow me to use/expand my knowledge of software engineering, cybersecurity, and new technologies. I hope to learn, grow, and experience a myriad of new things.",
-    "address":"Western Colorado, United States",
-    "website":"https://krazychase.github.io",
-    "education":[
-      {
-        "UniversityName":"Colorado Mesa University",
-        "specialization":"Bachelor of Science in Computer Science",
-        "MonthOfPassing":"March",
-        "YearOfPassing":"2021",
-        "Achievements":"Cybersecurity Minor / Magna Cum Laude / 3.91 GPA"
-      }
-    ],
     "work":[
       {
         "CompanyName":"Walker Products Inc.",
@@ -43,31 +31,40 @@ let resumeData = {
         "Achievements":"Build and maintain rapid prototyping machines such as 3D printers, CNC machines, and CO2 laser cutters. Assist in development of JavaScript program to interact with hardware."
       }
     ],
+    "education":[
+      {
+        "UniversityName":"Colorado Mesa University",
+        "specialization":"Bachelor of Science in Computer Science",
+        "MonthOfPassing":"March",
+        "YearOfPassing":"2021",
+        "Achievements":"Cybersecurity Minor / Magna Cum Laude / 3.91 GPA"
+      }
+    ],
     "skillsDescription":"Languages / Frameworks",
     "skills":[
       {
         "skillname":"Python",
-        "level":"_90"
+        "level":"90"
       },
       {
         "skillname":"C++",
-        "level":"_60"
+        "level":"60"
       },
       {
         "skillname":"JavaScript / ReactJS / TypeScript",
-        "level":"_50"
+        "level":"50"
       },
       {
         "skillname":"SQL",
-        "level":"_70"
+        "level":"70"
       },
       {
         "skillname":"Git / GitHub",
-        "level":"_70"
+        "level":"70"
       },
       {
         "skillname":"Agile / Scrum",
-        "level":"_90"
+        "level":"90"
       }
     ],
     "portfolio":[
@@ -94,14 +91,17 @@ let resumeData = {
     ],
     "testimonials":[
       {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
+        "name":"Some technical guy",
+        "title":"Tech place",
+        "description":"This is a sample testimonial"
       },
       {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
+        "name":"Some technical guy",
+        "title":"Tech place",
+        "description":"This is a sample testimonial"
       }
-    ]
+    ],
+    "contactUsMessage":"Have a new project / opportunity in mind? Reach out and let's discuss it! Let's turn that idea into something awesome :)"
   }
   
   export default resumeData

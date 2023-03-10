@@ -3,80 +3,93 @@ export default  class Resume extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
-      <section id="resume">
-         <div className="row education">
-            <div className="three columns header-col">
-               <h1><span>Education</span></h1>
+      <section id="resume" className="s-resume target-section">
+        
+        <div className="row s-resume__section">
+            <div className="column large-3 tab-12">
+                <h3 className="section-header-allcaps">Career</h3>
             </div>
-            <div className="nine columns main-col">
-              {
-                resumeData.education && resumeData.education.map((item)=>{
-                  return(
-                    <div className="row item">
-                       <div className="twelve columns">
-                          <h3>{item.UniversityName}</h3>
-                          <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
-                       </div>
-                    </div>
-                  )
-                })
-              }
-            </div>
-         </div>
-        <div className="row work">
-            <div className="three columns header-col">
-               <h1><span>Work</span></h1>
-            </div>
-            <div className="nine columns main-col">
-              {
-                resumeData.work && resumeData.work.map((item) => {
-                  return(
-                    <div className="row item">
-                       <div className="twelve columns">
-                          <h3>{item.CompanyName}</h3>
-                          <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.MonthOfLeaving} {item.YearOfLeaving}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
-                       </div>
-
-                    </div>
-
-                  )
-                })
-              }
-            </div> 
-         </div>
-         <div className="row skill">
-            <div className="three columns header-col">
-               <h1><span>Skills</span></h1>
-            </div>
-            <div className="nine columns main-col">
-               <p>
-                {resumeData.skillsDescription}
-               </p>
-   				<div className="bars">
-   				   <ul className="skills">
+            <div className="column large-9 tab-12">
                 {
-                  resumeData.skills && resumeData.skills.map((item) => {
-                    return(
-                      <li>
-                        <span className={`bar-expand ${item.level}`}></span>
-                        <em>{item.skillname}</em>
-                      </li>
-                    )
-                  })
+                    resumeData.work && resumeData.work.map((item) => {
+                        return(
+                            <div className="resume-block">
+                                <div className="resume-block__header">
+                                    <h4 className="h3">{item.CompanyName}</h4>
+                                    <p className="resume-block__header-meta">
+                                        <span>{item.specialization}</span> 
+                                        <span className="resume-block__header-date">
+                                            {item.MonthOfLeaving} {item.YearOfLeaving}
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    {item.Achievements}
+                                </p>
+
+                            </div>
+                         )
+                    })
                 }
-   					</ul>
-   				</div>
-   			</div>
+            </div>
+        </div>
+
+        <div className="row s-resume__section">
+            <div className="column large-3 tab-12">
+                <h3 className="section-header-allcaps">Education</h3>
+            </div>
+            <div className="column large-9 tab-12">
+                {
+                    resumeData.education && resumeData.education.map((item)=>{
+                        return(
+                            <div className="resume-block">
+
+                                <div className="resume-block__header">
+                                    <h4 className="h3">{item.UniversityName}</h4>
+                                    <p className="resume-block__header-meta">
+                                        <span>{item.specialization}</span> 
+                                        <span className="resume-block__header-date">
+                                            {item.MonthOfPassing} {item.YearOfPassing}
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    {item.Achievements}
+                                </p>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </div>
+
+        <div className="row s-resume__section">
+            <div className="column large-3 tab-12">
+                <h3 className="section-header-allcaps">Skills</h3>
+            </div>
+            <div className="column large-9 tab-12">
+                <div className="resume-block">
+
+                    <p>
+                        {resumeData.skillsDescription}
+                    </p>
+
+                    <ul className="skill-bars-fat">
+                        {
+                            resumeData.skills && resumeData.skills.map((item) => {
+                                return(
+                                    <li>
+                                    <div className={"progress percent" + item.level}></div>
+                                    <strong>{item.skillname}</strong>
+                                    </li>
+                                )
+                            })
+                        }
+                      </ul>
+                  </div>
+            </div>
         </div>
       </section>
     );
