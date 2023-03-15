@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 import Header from './components/Header';
 import About from './components/About';
 import Resume from './components/Resume';
@@ -11,6 +12,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Helmet>
+          <script src="js/plugins.js"></script>
+          <script src="js/main.js"></script>
+        </Helmet>
         <Header resumeData={resumeData}/>
         <About resumeData={resumeData}/>
         <Resume resumeData={resumeData}/>
