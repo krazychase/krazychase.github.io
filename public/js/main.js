@@ -301,16 +301,19 @@
     * ------------------------------------------------------ */
     (function ssInit() {
 
-        ssPreloader();
-        ssParallax();
-        ssMoveHeader();
-        ssMobileMenu();
-        ssScrollSpy();
-        ssSwiper();
-        ssLightbox();
-        ssAlertBoxes();
-        ssSmoothScroll();
-        ssBackToTop();
+        setTimeout(() => {
+            console.log("Main loaded");
+            ssPreloader();
+            ssParallax();
+            ssMoveHeader();
+            ssMobileMenu();
+            ssScrollSpy();
+            ssSwiper();
+            ssLightbox();
+            ssAlertBoxes();
+            ssSmoothScroll();
+            ssBackToTop();
+        }, 100);
 
     })();
 

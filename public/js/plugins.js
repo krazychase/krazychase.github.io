@@ -3,7 +3,7 @@
  *
  * ------------------------------------------------------------------- */
 
-
+console.log("Plugins loaded");
 /* PrismJS 1.20.0
  * https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+markup-templating+php 
  */

@@ -13,8 +13,8 @@ class App extends Component {
     return (
       <div className="App">
         <Helmet>
-          <script src="js/plugins.js"></script>
-          <script src="js/main.js"></script>
+          <script src="js/plugins.js"  />
+          <script src="js/main.js" />
         </Helmet>
         <Header resumeData={resumeData}/>
         <About resumeData={resumeData}/>
