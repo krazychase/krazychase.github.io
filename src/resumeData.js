@@ -69,24 +69,32 @@ let resumeData = {
     ],
     "portfolio":[
       {
-        "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/coffee.jpg"
+        "name":"This Website!",
+        "description":"The website you're on! Created by converting a static HTML page to React and adding in Typescript.",
+        "catagory":"Website",
+        "imgurl":"images/portfolio/Website.png",
+        "link":"https://github.com/krazychase/krazychase.github.io"
       },
       {
-        "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/origami.jpg"
+        "name":"MAF Sensor Test Stand",
+        "description":"A large-scale program and hardware designed to interact with physical test-stands to automatically test Mass Air Flow sensor functionality. It was developed using Python, MSSQL, TKinter, Matplotlib, and many other libraries. This was successfully implimented and more than doubled production numbers while reducing scrap rates and human errors.",
+        "catagory":"Desktop Application",
+        "imgurl":"images/portfolio/MAF.png",
+        "link":"https://www.walkerproducts.com/products/mass-air-flow-sensors/"
       },
       {
-        "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/retrocam.jpg"
+        "name":"Excel to SQL Transfer",
+        "description":"A program I designed, tested, and delivered that analyzes thousands of Excel spreadsheets and transfers relevant data to a SQL database. This used Python, Sqlite, Pandas, and more. I was able to analyze and transfer %100 of data before deadline.",
+        "catagory":"Database Software",
+        "imgurl":"images/portfolio/transfer.png",
+        "link":"https://sqlite.org/index.html"
       },
       {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/console.jpg"
+        "name":"AI Iris Classification",
+        "description":"A project that created and analyzed multiple machine learning models for prediction iris species given the 4 features. I used many different methods such as K Neighbors Classifier and Support Vector Classification. I made this using Python, SKLearn, and Keras. I was able to achieve %100 accuracy in species identification.",
+        "catagory":"AI / Machine Learning",
+        "imgurl":"images/portfolio/iris.jpg",
+        "link":"https://github.com/krazychase/SchoolStuff/tree/master/AI/iris"
       }
     ],
     "testimonials":[
