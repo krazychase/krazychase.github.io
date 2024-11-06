@@ -1,7 +1,7 @@
 let resumeData = {
     "name": "Chase Brown",
     "role": "Computer Scientist / Software Engineer / Cybersecurity Enthusiast",
-    "address":"Grand Junction Colorado, United States",
+    "address":"Fukuoka-shi, Hakata-ku, Japan",
     "website":"https://krazychase.github.io",
     "email":"cabrown.business@gmail.com",
     "socialLinks":[
@@ -14,14 +14,21 @@ let resumeData = {
           "url":"http://github.com/krazychase",
         }
       ],
-    "aboutme":"I am an innovative Computer Scientist who learns quickly and embraces challenges. I seek to obtain a full-time opportunity that will allow me to use/expand my knowledge of software engineering, cybersecurity, and new technologies. I hope to learn, grow, and experience a myriad of new things.",
+    "aboutme":"I am an innovative Software Engineer who learns quickly and embraces challenges. I seek to obtain a full-time opportunity that will allow me to use/expand my knowledge of software engineering, cybersecurity, and new technologies. I hope to learn, grow, and experience a myriad of new things.",
     "work":[
+      {
+        "CompanyName":"Davey Japan Co., LTD",
+        "specialization":"System Engineer",
+        "MonthOfLeaving":"November",
+        "YearOfLeaving":"2024",
+        "Achievements":"Architected, deployed, and maintained website infrastructure utilizing AWS services, including EC2, S3, RDS, and CloudFront, to ensure high availability. Administered and optimized Microsoft 365 tenant through MS Admin Center, Entra, and Exchange, to enhance organizational productivity and security. Contributed to full-stack software development, collaborating on both front and backend projects using Angular, TypeScript, Ruby on Rails, and PostgreSQL. Assisted project management for an overseas development team through GitHub and Asana, facilitating seamless collaboration, version control, and on-time project delivery."
+      },
       {
         "CompanyName":"Walker Products Inc.",
         "specialization":"Software Engineer",
-        "MonthOfLeaving":"Current",
-        "YearOfLeaving":"",
-        "Achievements":"Design, develop, manage, and maintain automotive testing software using Python, C++, and SQL from scratch. Develop compact, secure code for microcontrollers using C/C++. Integrate and deploy software components into a fully functional hardware test system using Git. Produce specifications and determine operational feasibility of given hardware. Maintained, managed, and operated 3D printers and accompanying software. Communicate and collaborate among fellow engineers and production employees to attain a common goal."
+        "MonthOfLeaving":"September",
+        "YearOfLeaving":"2023",
+        "Achievements":"Designed, developed, and maintained automotive testing software from the ground up, using Python, C++, and SQL, ensuring accuracy and reliability for critical testing processes. Engineered compact, secure code for microcontrollers in C/C++, optimizing performance and resource efficiency. Integrated and deployed software components into hardware test systems using Git, enabling streamlined testing and version control. Developed specifications and assessed operational feasibility of hardware solutions, aligning technical design with functional requirements. Oversaw the operation and maintenance of 3D printers and associated software, reducing prototyping cost and increasing precision. Fostered cross-functional collaboration with engineering and production teams to meet project milestones and achieve unified goals"
       },
       {
         "CompanyName":"NASA Colorado Space Grant Consortium",
@@ -47,23 +54,27 @@ let resumeData = {
         "level":"90"
       },
       {
-        "skillname":"C++",
-        "level":"60"
-      },
-      {
-        "skillname":"JavaScript / ReactJS / TypeScript",
-        "level":"50"
-      },
-      {
-        "skillname":"SQL",
+        "skillname":"JavaScript / React / TypeScript / Angular",
         "level":"70"
       },
       {
-        "skillname":"Git / GitHub",
+        "skillname":"C++",
+        "level":"50"
+      },
+      {
+        "skillname":"Ruby On Rails",
+        "level":"60"
+      },
+      {
+        "skillname":"SQL, PostgreSQL, MySQL, Access",
         "level":"70"
       },
       {
         "skillname":"Agile / Scrum",
+        "level":"80"
+      },
+      {
+        "skillname":"Git / GitHub",
         "level":"90"
       }
     ],
