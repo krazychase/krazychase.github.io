@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-export default class ContactUs extends Component {
+import { ResumeData } from '../resumeData';
+
+interface ContactUsProps {
+  resumeData: ResumeData;
+}
+
+export default class ContactUs extends Component<ContactUsProps> {
   render() {
-    let resumeData = this.props.resumeData;
+    const { resumeData } = this.props;
     return (
       <section id="contact" className="s-contact target-section">
 
