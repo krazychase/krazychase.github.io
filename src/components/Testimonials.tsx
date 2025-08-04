@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
-export default class Testimonials extends Component {
+import { ResumeData } from '../resumeData';
+
+
+interface TestimonialsProps {
+  resumeData: ResumeData;
+}
+
+export default class Testimonials extends Component<TestimonialsProps> {
   render() {
-    let resumeData = this.props.resumeData;
+    const { resumeData } = this.props;
     return (
       <section id="testimonials" className="s-testimonials target-section">
         <div className="s-testimonials__bg"></div>
