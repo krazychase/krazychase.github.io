@@ -14,12 +14,19 @@ let resumeData = {
           "url":"http://github.com/krazychase",
         }
       ],
-    "aboutme":"I am an innovative Software Engineer who learns quickly and embraces challenges. I seek to obtain a full-time opportunity that will allow me to use/expand my knowledge of software engineering, cybersecurity, and new technologies. I hope to learn, grow, and experience a myriad of new things.",
+    "aboutme":"I am an innovative Software Engineer who learns quickly and embraces challenges. I seek opportunities that allow me to use/expand my knowledge of software engineering, cybersecurity, and new technologies. I hope to learn, grow, and experience a myriad of new things.",
     "work":[
+      {
+        "CompanyName":"Alterbooth (株式会社オルターブース)",
+        "specialization":"Cloud Solutions Engineer",
+        "MonthOfLeaving":"Current",
+        "YearOfLeaving":"",
+        "Achievements":"Architect, develop, and deploy cloud solutions leveraging Microsoft Azure services. Design and implement secure, scalable, and efficient cloud solutions to meet client needs. Collaborate with cross-functional teams to ensure seamless integration of cloud solutions into existing systems. Provide technical guidance and support to clients, ensuring successful adoption and utilization of cloud technologies. Stay updated with the latest industry trends and best practices in cloud computing to continuously improve service offerings."
+      },
       {
         "CompanyName":"Davey Japan Co., LTD",
         "specialization":"System Engineer",
-        "MonthOfLeaving":"November",
+        "MonthOfLeaving":"December",
         "YearOfLeaving":"2024",
         "Achievements":"Architected, deployed, and maintained website infrastructure utilizing AWS services, including EC2, S3, RDS, and CloudFront, to ensure high availability. Administered and optimized Microsoft 365 tenant through MS Admin Center, Entra, and Exchange, to enhance organizational productivity and security. Contributed to full-stack software development, collaborating on both front and backend projects using Angular, TypeScript, Ruby on Rails, and PostgreSQL. Assisted project management for an overseas development team through GitHub and Asana, facilitating seamless collaboration, version control, and on-time project delivery."
       },
@@ -58,12 +65,8 @@ let resumeData = {
         "level":"70"
       },
       {
-        "skillname":"C++",
-        "level":"50"
-      },
-      {
-        "skillname":"Ruby On Rails",
-        "level":"60"
+        "skillname":"C#",
+        "level":"70"
       },
       {
         "skillname":"SQL, PostgreSQL, MySQL, Access",
