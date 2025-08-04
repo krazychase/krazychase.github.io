@@ -1,4 +1,61 @@
-let resumeData = {
+export interface SocialLink {
+  name: string;
+  url: string;
+}
+
+export interface WorkExperience {
+  CompanyName: string;
+  specialization: string;
+  MonthOfLeaving: string;
+  YearOfLeaving: string;
+  Achievements: string;
+}
+
+export interface Education {
+  UniversityName: string;
+  specialization: string;
+  MonthOfPassing: string;
+  YearOfPassing: string;
+  Achievements: string;
+}
+
+export interface Skill {
+  skillname: string;
+  level: string;
+}
+
+export interface PortfolioItem {
+  name: string;
+  description: string;
+  catagory: string;
+  imgurl: string;
+  link: string;
+}
+
+export interface Testimonial {
+  name: string;
+  title: string;
+  description: string;
+}
+
+export interface ResumeData {
+  name: string;
+  role: string;
+  address: string;
+  website: string;
+  email: string;
+  socialLinks: SocialLink[];
+  aboutme: string;
+  work: WorkExperience[];
+  education: Education[];
+  skillsDescription: string;
+  skills: Skill[];
+  portfolio: PortfolioItem[];
+  testimonials: Testimonial[];
+  contactUsMessage: string;
+}
+
+const resumeData: ResumeData = {
     "name": "Chase Brown",
     "role": "Computer Scientist / Software Engineer / Cybersecurity Enthusiast",
     "address":"Fukuoka-shi, Hakata-ku, Japan",
