@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-export default class Porfolio extends Component {
+import { ResumeData } from '../resumeData';
+
+interface PortfolioProps {
+  resumeData: ResumeData;
+}
+
+export default class Portfolio extends Component<PortfolioProps> {
   render() {
-    let resumeData = this.props.resumeData;
+    const { resumeData } = this.props;
     return (
       <section id="portfolio" className="s-portfolio target-section">
 
