@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-export default class Footer extends Component {
+import { ResumeData } from '../resumeData';
+
+interface FooterProps {
+  resumeData: ResumeData;
+}
+
+export default class Footer extends Component<FooterProps> {
   render() {
-    let resumeData = this.props.resumeData;
+    const { resumeData } = this.props;
     return (
       <footer className="s-footer">
         <div className="row">
