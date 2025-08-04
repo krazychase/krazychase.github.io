@@ -44,7 +44,7 @@ export default class Portfolio extends Component<PortfolioProps> {
                                 <h5>{item.name}</h5>
                                 <p>{item.description}</p>
                                 <ul className="modal-popup__cat">
-                                    <li>{item.catagory}</li>
+                                    <li>{item.category}</li>
                                 </ul>
                             </div>
 
