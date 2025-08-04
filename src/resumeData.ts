@@ -1,4 +1,61 @@
-let resumeData = {
+export interface SocialLink {
+  name: string;
+  url: string;
+}
+
+export interface WorkExperience {
+  CompanyName: string;
+  specialization: string;
+  MonthOfLeaving: string;
+  YearOfLeaving: string;
+  Achievements: string;
+}
+
+export interface Education {
+  UniversityName: string;
+  specialization: string;
+  MonthOfPassing: string;
+  YearOfPassing: string;
+  Achievements: string;
+}
+
+export interface Skill {
+  skillname: string;
+  level: string;
+}
+
+export interface PortfolioItem {
+  name: string;
+  description: string;
+  category: string;
+  imgurl: string;
+  link: string;
+}
+
+export interface Testimonial {
+  name: string;
+  title: string;
+  description: string;
+}
+
+export interface ResumeData {
+  name: string;
+  role: string;
+  address: string;
+  website: string;
+  email: string;
+  socialLinks: SocialLink[];
+  aboutme: string;
+  work: WorkExperience[];
+  education: Education[];
+  skillsDescription: string;
+  skills: Skill[];
+  portfolio: PortfolioItem[];
+  testimonials: Testimonial[];
+  contactUsMessage: string;
+}
+
+const resumeData: ResumeData = {
     "name": "Chase Brown",
     "role": "Computer Scientist / Software Engineer / Cybersecurity Enthusiast",
     "address":"Fukuoka-shi, Hakata-ku, Japan",
@@ -85,28 +142,28 @@ let resumeData = {
       {
         "name":"This Website!",
         "description":"The website you're on! Created by converting a static HTML page to React and adding in Typescript.",
-        "catagory":"Website",
+        "category":"Website",
         "imgurl":"images/portfolio/Website.png",
         "link":"https://github.com/krazychase/krazychase.github.io"
       },
       {
         "name":"MAF Sensor Test Stand",
         "description":"A large-scale program and hardware designed to interact with physical test-stands to automatically test Mass Air Flow sensor functionality. It was developed using Python, MSSQL, TKinter, Matplotlib, and many other libraries. This was successfully implimented and more than doubled production numbers while reducing scrap rates and human errors.",
-        "catagory":"Desktop Application",
+        "category":"Desktop Application",
         "imgurl":"images/portfolio/MAF.png",
         "link":"https://www.walkerproducts.com/products/mass-air-flow-sensors/"
       },
       {
         "name":"Excel to SQL Transfer",
         "description":"A program I designed, tested, and delivered that analyzes thousands of Excel spreadsheets and transfers relevant data to a SQL database. This used Python, Sqlite, Pandas, and more. I was able to analyze and transfer %100 of data before deadline.",
-        "catagory":"Database Software",
+        "category":"Database Software",
         "imgurl":"images/portfolio/transfer.png",
         "link":"https://sqlite.org/index.html"
       },
       {
         "name":"AI Iris Classification",
         "description":"A project that created and analyzed multiple machine learning models for prediction iris species given the 4 features. I used many different methods such as K Neighbors Classifier and Support Vector Classification. I made this using Python, SKLearn, and Keras. I was able to achieve %100 accuracy in species identification.",
-        "catagory":"AI / Machine Learning",
+        "category":"AI / Machine Learning",
         "imgurl":"images/portfolio/iris.jpg",
         "link":"https://github.com/krazychase/SchoolStuff/tree/master/AI/iris"
       }

@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-export default class About extends Component {
+import { ResumeData } from '../resumeData';
+
+interface AboutProps {
+  resumeData: ResumeData;
+}
+
+export default class About extends Component<AboutProps> {
   render() {
-    let resumeData = this.props.resumeData;
+    const { resumeData } = this.props;
     return (
       <section id="about" className="s-about target-section">
 
