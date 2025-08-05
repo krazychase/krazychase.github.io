@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-export default class Header extends Component {
+import { ResumeData } from '../resumeData';
+
+interface HeaderProps {
+    resumeData: ResumeData;
+}
+
+export default class Header extends Component<HeaderProps> {
     render() {
-        let resumeData = this.props.resumeData;
+        const { resumeData } = this.props;
         return (
             <React.Fragment>
         
